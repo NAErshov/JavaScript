@@ -6,17 +6,17 @@
 // Имена часто называют ключами
 
 // Пример Объекта:
-{
-    visible: true, // где ключ - visible , его значение true
-    colorDepth: 24, // где ключ - colorDepth , его значение 24
-    title: 'My Image', //visible colorDepth title orientation - всё свойства данного обьекта
-    orientation: { // true 24 'My Image' - значение соответствующих свойств
-        angle: 0,
-        type: 'landscape' // - это вложенный объект
-    },
-    pixelDepth: 24,
-    width: 1440
-}
+// {
+//    visible: true, // где ключ - visible , его значение true
+//    colorDepth: 24, // где ключ - colorDepth , его значение 24
+//    title: 'My Image', //visible colorDepth title orientation - всё свойства данного обьекта
+//    orientation: { // true 24 'My Image' - значение соответствующих свойств
+//        angle: 0,
+//        type: 'landscape' // - это вложенный объект
+//    },
+//    pixelDepth: 24,
+//    width: 1440
+// }
 
 // Массив - это Объект
 // Функция - это Объект
@@ -34,3 +34,8 @@
 // console.log()
 // console.dir() - с помощью этого метода можно отобразить в консои все свойства того или иного объкта
 // console.table() - с помощью этого метода можно увидить все свойста обьекта который был передан как аргумент, то есть будет находиться в скобках, в табличном виде 
+
+console.log('Victory')
+
+// Вызов функции всегда возвращает значение
+// в данном случае он будет undefined
