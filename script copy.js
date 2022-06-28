@@ -1,10 +1,9 @@
-const objectA = {
-    a: 10,
-    b: true
+function a() {
+    console.log('Hey there')
 }
-const copyOfA = objectA
-copyOfA.Hello = "abc"
 
-console.log(objectA)
-console.log(copyOfA)
+a()
 
+a = 10
+
+a()
