@@ -202,3 +202,81 @@ console.log('Victory')
 //========================================================================
 
 // ОБЪЕКТЫ
+//
+// Практически все сущности в JS это объекты
+// Объект это набор свойств " ИМЯ: ЗНАЧЕНИЕ "
+// Объект - это тип значений
+// Объект - это тип переменных
+// Объекты - это ссылочный тип и переменная к которой вы присваиваете 
+//      объект содержит только ссылку на объект который находится в 
+//      другом месте памяти
+//
+// const myCity = {
+//    city // свойство //: 'Kazan', // значение свойства //
+//    popular: true,
+//   country: 'Russia'
+// }
+//
+// Объект записывается между фигурными скобками
+// Порядок свойств не имеет значение
+//
+// Получение значения свойств
+//
+// const myCity = {
+//    city: 'Kazan',
+//    popular: true,
+//   country: 'Russia'
+// }
+// concole.log(myCity.city) // 'Kazan'
+// console.log(myCity.popular) // true
+//
+// Изменение значений свойств
+//
+// const myCity = {
+//    city: 'Kazan'
+// }
+// myCity.city = 'Vladivostok'
+// consol.log(myCity) // {city: 'Vladivostok'}
+//
+// Добавление новых свойств
+// const myCity = {
+//    city: 'Kazan'
+// }
+// myCity.popular = true
+// consol.log(myCity) // {city: 'Kazan', popular: true}
+//
+// myCity.country = 'Russia'
+// consol.log(myCity) // {city: 'Kazan', popular: true, country: 'Russia'}
+//
+// Удаление свойств в объекте
+// const myCity = {
+//    city: 'Kazan',
+//    popular: true,
+//   country: 'Russia'
+// }
+// delete myCity.popular
+// console.log(myCity) // {city: 'Kazan', country: 'Russia'}
+//
+// Доступ к значению свойства с использованием скобок
+// const myCity = {
+//    sity: 'Kazan'
+// }
+// myCity['popular'] = true
+// console.log(myCity) // {city: 'Kazan', popular: true}
+//
+// const countryPropertyName = 'country'
+// myCity[countryPropertyName] = 'Russia'
+//
+// console.log(myCity) // {city: 'Kazan', popular: true, country: 'Russia'}
+//
+// Вложенные свойства
+// const myCity = {
+//    myCity: 'Kazan',
+//    info: {
+//         isPopular: true,
+//         country: 'Russia' 
+//    }
+// }
+// console.log(myCity.info.isPopular) // true
+// delete myCity.info['isPopular'] // или // delete myCity.info.isPopular
+// console.log(myCity) // {city: 'Kazan', info: {country: 'Russia'}}

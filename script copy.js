@@ -1,9 +1,12 @@
-function a() {
-    console.log('Hey there')
+const myCity = {
+    city: 'Kazan',
+    info: {
+        isPopular: true,
+        country: 'Russia'
+    }
 }
 
-a()
+delete myCity.info['isPopular']
 
-a = 10
-
-a()
+console.log(myCity)
+// console.log(myCity.info.isPopular)
