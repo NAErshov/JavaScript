@@ -1,12 +1,14 @@
-const myCity = {
-    city: 'Kazan',
-    info: {
-        isPopular: true,
-        country: 'Russia'
-    }
+const post = {
+    title: 'My post',
+    likesQty: 5
 }
 
-delete myCity.info['isPopular']
+JSON.stringify(post)
 
-console.log(myCity)
-// console.log(myCity.info.isPopular)
+console.log(JSON.stringify(post))
+
+const postStringified = JSON.stringify(post)
+JSON.parse(postStringified)
+
+
+console.log(JSON.parse(postStringified))

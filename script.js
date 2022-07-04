@@ -280,3 +280,61 @@ console.log('Victory')
 // console.log(myCity.info.isPopular) // true
 // delete myCity.info['isPopular'] // или // delete myCity.info.isPopular
 // console.log(myCity) // {city: 'Kazan', info: {country: 'Russia'}}
+//
+// Использование переменных при формировании объекта
+// const name = 'Nikolay'
+// const postsQty = 34
+//
+// const userProfile = {
+//    name: name, // сформированно из значения объявленного ранее ('Nikolay')
+//    postsQty: postsQty, // сформированно из значения объявленного ранее (34)
+//    hasSignedAgreement: false
+// }
+// Сокращенно будет выглядеть так:
+// const name = 'Nikolay'
+// const postsQty = 34
+// const userProfile = {
+//    name,
+//    postsQty,
+//    hasSignedAgreement: false
+// }
+
+// ================================================
+// ГЛОБАЛЬНЫЕ ОБЪЕКТЫ
+//
+// window - Веб браузеры
+// global - Node.js
+
+// Унифицированный глобальный объект - globalThis - работает и веб браузерах и в Node.js
+
+// Свойства глобальных объектов:
+// console (window.console / global.console)
+
+// =====================================================
+// МЕТОДЫ ОБЪЕКТА
+//
+// МЕТОД - свойство объекта значение которого - ФУНКЦИЯ
+// соответственно методы можно вызывать, так как функции вызываются
+//
+// const myCity = {
+//     city: 'KAZAN',
+//     cityGreeting: function() { // здесь в скобках указываюся опциональные параметры функции
+//         console.log('Greetings!!!')
+//     }
+// }
+// 
+// myCity.cityGreeting() // 'Greetings!!!' // вызов функции происходит за счет скобок
+// 
+// Сокращенная запись:
+// const myCity = {
+//     city: 'KAZAN',
+//     cityGreeting() {
+//         console.log('Greetings!!!')
+//     }
+// }
+// myCity.cityGreeting() // 'Greetings!!!'
+
+//============================================================
+// РАЗНИЦА МЕЖДУ МЕТОДАМИ И СВОЙСТВАМИ ЗАКЛЮЧАЕТСЯ В МЕТОДЕ ИХ ВЫЗОВА
+// myCity.city - Доступ к значению свойства
+// myCity.cityGreeting() - вызов метода (обязательно со скобками)
